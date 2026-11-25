@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int k = 100;
+    int count = 0;
+
+    for (int i = 0; i <= 100; i++)
+    {
+        for (int j = 0; j <= 50; j++)
+        {
+            for (int m = 0; m <= 33; m++)
+            {
+                if (i + j * 2 + m * 3 == k)
+                {
+                    cout << i << "\t" << j << "\t" << m << endl;
+                    count++;
+                }
+            }
+        }
+    }
+
+    cout << "Kilkist variantiv: " << count;
+
+    return 0;
+}

@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double a, y;
+    int n;
+
+    cin >> a >> n;
+
+    y = a;
+
+    for (int i = 1; i <= n; i++)
+    {
+        y = y * (a - i * n);
+    }
+
+    cout << y;
+
+    return 0;
+}

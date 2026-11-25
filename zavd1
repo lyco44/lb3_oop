@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    double dob = 1;
+
+    cin >> n;
+
+    for (int i = 20; i <= n && i < 100; i++)
+    {
+        if (i % 5 == 0 && i % 3 == 0)
+        {
+            cout << i << " ";
+            dob = dob * i;
+        }
+    }
+
+    cout << endl << "Dobutok = " << dob;
+
+    return 0;
+}
